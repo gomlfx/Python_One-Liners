@@ -36,4 +36,12 @@ since True is 1, nonzero() will report this as true or 1, nonzero() counts by ro
 element-wise counts. Since bool (True False) is also 0 or 1, it is under dtype=int64
 """
 
+print(cities[np.nonzero(X > np.average(X))[0]])
+"""
+advanced indexing, [0] extracts the string name for each element in the array,
+notice at this point there are duplicates, so use set() to remove duplicates.
+"""
+
+
+
 
